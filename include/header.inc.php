@@ -9,13 +9,9 @@
 	// Pulls data elements used throughout the entire website
 	require_once 'functions.inc.php';
 
-
-	/*
-		The following will be passes along to JavaScript by establishing
-		variables in PHP and passing them into the HTML via Global
-		JavaScript variables the same names used in PHP.
-	*/
-
+	if($_SERVER["SERVER_PORT"] == '80' && $_SERVER["HTTP_HOST"] !== 'localhost') {
+		header('Location: https://'.$_SERVER["HTTP_HOST"]);
+	}
 ?>
 
 <!doctype html>
