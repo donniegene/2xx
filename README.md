@@ -25,7 +25,6 @@ Version 202.0
 	- included in the very top of the header.inc.php a require_once to the include/functions.inc.php file
 
 Version 203.0
-
 	- rename the menu.data.php page to content.data.php and made updates in header.inc.php
 		- make modifications to the content.data.php page
 			- change the variable/array name from "$menuItems" to "$content"
